@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Allow: /parafusosautomotivos.com.br
+
+Sitemap: https://parafusosautomotivos.com.br/sitemap.xml
