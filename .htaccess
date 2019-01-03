@@ -1,2 +1,0 @@
-RewriteCond %{HTTP_HOST} ^www\.parafusosautomotivos\.com.br$
-RewriteRule ^/?$ "http\:\/\/parafusosautomotivos\.com.br\/" [R=301,L]
