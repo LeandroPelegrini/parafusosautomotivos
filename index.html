@@ -1,8 +1,10 @@
-<!DOCTYPE HTML> 
-<html lang="pt-br"> 
-    <head> 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108585193-1"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-108585193-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -10,309 +12,120 @@
 
         gtag('config', 'UA-108585193-1');
         </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-function _(id){ return document.getElementById(id); }
-function submitForm(){
-	_("mybtn").disabled = true;
-	_("status").innerHTML = 'Aguarde ...';
-	var formdata = new FormData();
-	formdata.append( "nome", _("nome").value );
-	formdata.append( "email", _("email").value );
-    formdata.append( "telefone", _("telefone").value );
-	formdata.append( "mensagem", _("mensagem").value );
-	var ajax = new XMLHttpRequest();
-	ajax.open( "POST", "php/formreal.php" );
-	ajax.onreadystatechange = function() {
-		if(ajax.readyState == 4 && ajax.status == 200) {
-			if(ajax.responseText == "Formulário enviado!"){
-				_("my_form").innerHTML = '<h2>Obrigado '+_("nome").value+', sua mensagem foi enviada.</h2>';
-			} else {
-				_("status").innerHTML = ajax.responseText;
-				_("mybtn").disabled = false;
-			}
-		}
-	}
-	ajax.send( formdata );
-};
-        </script>
-        <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
-        <title>Parafusos Automotivos | Peças Originais</title>         
-        <meta charset="utf-8" /> 
-        <!-- Opera Speed Dial Favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/main.css" /> 
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->         
-        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->         
-    </head>     
-    <body class="index"> 
-        <div id="page-wrapper"> 
-            <!-- Header -->             
-            <header id="header" class="alt"> 
-                <h1 id="logo" class="logo"><a href="#page-wrapper">Parafusos <span>Automotivos</span></a></h1> 
-                <nav id="nav"> 
-                    <ul> 
-                        <li class="current">
-                            <a href="#page-wrapper">Home</a>
+        <meta name="description" content="A parafusosautomotivos.com.br é especializada em oferecer parafusos originais, com confiança e segurança para seus clientes de todo o Brasil.">
+        <meta name="author" content="Parafusos Automotivos">
+        <meta name="keywords" content="automotivos,benz,betim,caminhão,especiais,mercedes,flangeado,ônibus,originais,original,Parafuso,Parafusos,fiat,volkswagen,gm,chevrolet,brasil,motor,roda,cardan,Parafusos automotivos,parafuso flangeado">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <title>Parafusos Automotivos | Peças Originais</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="starter-template.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    </head>
+    <body>
+        <a name="inicio"></a>
+        <nav class="navbar custom-navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand custom-brand" href="#" style="font-family: Montserrat;"><strong>Parafusos</strong> Automotivos</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><button>Início</button><span class="sr-only">(current)</span></a>
                         </li>
-                        <li>
-                            <a href="#main">Destaques</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre"><button>Sobre</button></a>
                         </li>
-                        <li>
-                            <a href="#lojas">Lojas</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#segmentos"><button>Segmentos</button></a>
                         </li>
-                        <li>
-                            <a href="#sobre">Sobre</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato"><button>Contatos</button></a>
                         </li>
-                        <li>
-                            <a href="#contato">Contato</a>
-                        </li>                         
-                    </ul>                     
-                </nav>                 
-            </header>             
-            <!-- Banner -->             
-            <section id="banner"> 
-                <!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->                 
-                <div class="row rowcapa">
-                    <div class="col-sm-10 col-lg-10 offset-sm-1 offset-lg-1">
-                        <img src="assets/css/images/logo.png" class="logosm" />
-                        <header> 
-</header>
-                        <p class="pcapa">LINHA MOTOR - DIESEL E LEVES<br />
-PARAFUSOS DE RODA E PARAFUSOS DE CARDAN</p>
-                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FParafusos-Automotivos-Originais-122428901725540%2F&width=200&layout=button&action=like&size=small&show_faces=true&share=true&height=65&appId" width="150" height="65" style="border: none;
-    overflow: hidden;" align="center" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-                    </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="col-md-8">
+                <img src="assets/images/Layer%202.png" style="opacity: 0.08; z-index: -1; margin-bottom: -500px; margin-top: 70px;" class="img-fluid"/> 
+            </div>
+        </div>
+        <div class="container" style="margin-bottom: 5%; margin-top: 10%;">
+            <div class="row">
+                <hr style="left: 0;"/>
+                <div class="col-md-7">
+                    <h3 style="padding-top: 50px;">Nossa paixão é fornecer qualidade e segurança para você e seu veículo</h3> 
+                    <p style="color: #AAAAAA; font-size: 18px;">Parafusos originais motor diesel<br>Volvo - Scania - Cummins - MWM</p> 
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="assets/images/motor_diesel.png" style="height: 400px;" class="text-center d-none d-sm-inline" id="Motor" data-pg-name="imagem-motor" title="imagem-motor" alt="imagem-motor"/> 
+                </div>
+            </div>
+        </div>
+        <a name="sobre"></a>
+        <div class="text-right">
+            <img src="assets/images/Layer%202.png" style="opacity: 0.08; z-index: -1; margin-bottom: -600px; margin-top: 70px;" class="img-fluid"/>
+        </div>
+        <div class="container" style="padding-top: 10%; padding-bottom: 10%;">
+            <div class="row">
+                <hr style="right: 0;"/>
+                <div style="padding-top: 60px;" class="col-md-5 text-center">
+                    <img style="width: 300PX;" src="assets/images/logo.png" class="img-fluid mw-100" id="logo" data-pg-name="logoparafusos" title="logoparafusos" alt="logoparafusos"/> 
+                </div>
+                <div class="col-md-7 mt-5">
+                    <h3>A empresa</h3> 
+                    <p><p>Submetidos a constantes vibrações, torções, cisalhamentos, altas temperaturas e outras forças, nossos parafusos e porcas possuem aplicações de alta responsabilidade e segurança, seguindo as especificações técnicas e características originais de fábrica.<br></p><p>Disponibilizando para o mercado de reparação veicular e peças para motores, suspensão, sistemas de freio, cardan, câmbio, dentre outros, a Parafusos Automotivos preza pela qualidade de seus produtos e pela excelência no atendimento, buscando constantemente o aprimoramento técnico de seus colaboradores a fim de agregar valor aos negócios de seus clientes e parceiros.</p><img src="https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif"></p> 
+                </div>
+            </div>
+        </div>
+        <a name="segmentos"></a>
+        <div class="container" style="padding-top: 6%; padding-bottom: 10%;">
+            <div class="col-md-7 mt-5 col-lg-12">
+                <h3 style="text-align: center;">Segmentos</h3> 
+                <p><p>Trabalhamos exclusivamente com fornecedores homologados pelas montadoras automotivas, tendo atendido aos mais variados segmentos sempre com o compromisso com a ética.</p><img src="https://ssl.gstatic.com/ui/v1/icons/mail/images/cleardot.gif"></p> 
+            </div>
+            <div style="padding-top: 60px;" class="text-center col-md-12">
+                <div class="row">
+                    <img src="assets/images/colmeia.png" class="offset-md-2 col-md-8" id="segmentos" data-pg-name="segmentos" title="segmentos" alt="segmentos"/>
                 </div>                 
-            </section>             
-            <!-- Main -->             
-            <article id="main">
-                <header class="special container"> 
-                    <span class="icon fa-line-chart"></span> 
-                    <h2 style="font-size: 35px;
-    font-weight: 500;">Nossos Destaques</h2>
-                    <div class="row rowdestaques">
-                        <div class="col-md-3 offset-md-0"> 
-                            <img class="img-thumbnail" src="images/axordesta01.jpeg" alt="">
-                            <p><strong>Axor - M 22-1,50 X 7787 </strong></p>
-                            <p>Parafuso de roda dianteiro Axor - M 22-1,50 X 7787 recartilhado acabamento superficial especial geomet prata  - desenho A.000.401.45.71 original Tork<br>
-Accelo / Actros / Atego / Axor</p>
-                        </div>
-                        <div class="col-md-3 offset-md-0"> 
-                            <img class="img-thumbnail" src="images/axordesta02.jpeg" alt="">
-                            <p><strong>A.664.401.00.71 M 22-1,5 X 115125 </strong></p>
-                            <p>Parafuso de roda mercedes desenho A.664.401.00.71 M 22-1,5 X 115125 corpo retificado especial original <br>
-Accelo / Actros / Atego / Axorr</p> 
-                        </div>
-                        <div class="col-md-3 offset-md-0"> 
-                            <img class="img-thumbnail" src="images/destsprinterkit.jpg" alt="">
-                            <p><strong>KIT Sprinter M 14 - 1,50 x 57</strong></p>
-                            <p>Parafuso e porca da roda dupla sprinter. M 14-1,50 X 57 - kit completo</p> 
-                        </div>
-                        <div class="col-md-3 offset-md-0"> 
-                            <img class="img-thumbnail" src="images/axordesta04.jpeg" alt="">
-                            <p><strong>N000000005429 </strong></p>
-                            <p>Parafuso Especial Original 10.9
-Suporte do mancal Traseiro barra de suspensão
-M 20 -1,5 x 315 Sxt Fl.RP -10.9 Geo</p> 
-                        </div>
-                    </div>                     
-                </header>                 
-                <!-- One -->                 
-                <!-- Two -->                 
-                <!-- Three -->
-            </article>             
-            <!-- CTA -->             
-            <!-- CTA -->
-            <section id="lojas">
-                <header>
-                    <svg height="10" width="100">
-                        <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(255,255,255);stroke-width:5"></line>
-                        Sorry, your browser does not support inline SVG.
-                    </svg>
-                    <h2 style="font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 60px;">Nossa Loja</h2>
-                    <div class="row lojas">
-                        <div class="col-md-3 offset-md-0 col-10 offset-1 lojas">
-                            <a href="https://parafusosautomotivos.com.br/lojas/fiat.html">
-                                <img class="thumblojas" src="images/fiat_novo_logo.png" alt="">
-                            </a>                             
-                            <h3>FIAT</h3> 
-                            <p class="plojas">Parafusos originais para cabeçote e roda da linha FIAT</p> 
-                        </div>
-                        <div class="col-md-3 offset-md-0 col-10 offset-1 lojas">
-                            <a href="https://parafusosautomotivos.com.br/lojas/mercedes.html">
-                                <img class="img-thumbnail thumblojas" src="images/mercedes.png" alt="">
-                            </a>                             
-                            <h3>MERCEDES</h3> 
-                            <p class="plojas">Parafusos originais especiais para linha ônibus e caminhões Mercedes</p> 
-                        </div>
-                        <div class="col-md-3 offset-md-0 col-10 offset-1 lojas">
-                            <a href="https://parafusosautomotivos.com.br/lojas/volkswagen.html">
-                                <img class="img-thumbnail thumblojas" src="images/Volkswagen_1.png" alt="">
-                            </a>                             
-                            <h3>VOLKSWAGEN</h3> 
-                            <p></p>
-                            <div id="comp-ighra0te2">
-                                <p class="plojas"><span style="letter-spacing: 0.025em;">Parafusos originais para cabeçote e roda da linha</span><br></p>
-                            </div>                             
-                        </div>
-                        <div class="col-md-3 offset-md-0 col-10 offset-1 lojas">
-                            <a href="https://parafusosautomotivos.com.br/lojas/chevrolet.html">
-                                <img class="img-thumbnail thumblojas" src="images/Chevrolet-logo-E01CD324DF-seeklogo.com.png" alt="">
-                            </a>                             
-                            <h3>Chevrolet</h3> 
-                            <p class="plojas"><span style="letter-spacing: 0.025em;">Parafusos originais para cabeçote e rodada linha GM</span></p> 
-                        </div>
-                    </div>
-                </header>
-            </section>
-            <section id="sobre" class="sobre">
-                <header>
-                    <svg height="10" width="100">
-                        <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(20,20,20);stroke-width:5" />
-                        Sorry, your browser does not support inline SVG.
-                    </svg>
-                    <h2 style="font-size: 35px;
-    font-weight: 500;
-    text-align: center;
-    color: #484848;">Sobre</h2>
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 offset-1 col-11 colsobre"> 
-                            <div class="row">
-                                <p style="color: #919191;
-    text-align: justify;" class="col-lg-8 offset-lg-2 offset-1 col-10">A <strong>Parafusos Automotivos</strong>, nasceu a partir da observação de um profissional com mais de 40 anos de atuação no mercado automotivo, em empresas fornecedoras desse tipo de produto, na necessidade do mercado atual em ter acesso a produtos automotivos originais
-Vendo que o mercado de reparação para automóveis, caminhões e ônibus, principalmente em aplicações de alta performance e responsabilidade, bem como parafusos para cabeçote, roda e suspensão,  necessitavam de um acesso à produtos originais, para garantir a segurança do veículo, após o seu reparo e, da mesma forma oferecer ao reparador (oficina mecânica), trabalhar com produtos que possam garantir o serviço por ele executado, evitando assim,  retorno e insatisfação de seu cliente.
-Por essa razão, e pensando sempre na segurança do veículo bem como de seus condutores, nasceu a <strong>Parafusos Automotivos</strong>, trabalhando somente com peças originais para atender o mercado nacional.</p>
-                            </div>                             
-                        </div>
-                    </div>
-                </header>
-            </section>
-            <section id="contato" class="contato">
-                <header>
-                    <svg height="10" width="100">
-                        <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(200,200,200);stroke-width:5" />
-                        Sorry, your browser does not support inline SVG.
-                    </svg>
-                    <h2 style="font-size: 35px;
-    font-weight: 500;
-    text-align: center;
-    color: #dddddd;">Contato</h2>
-                    <div class="row">
-                        <div class="colcontact col-md-3 col-9 offset-2 offset-md-2">
-                            <p class="justificado"> <i class="fa fa-envelope ">&nbsp;&nbsp;contato@parafusosautomotivos.com.br</i></p>
-                        </div>
-                        <div class="colcontact offset-md-1 col-md-2 col-9 offset-2">
-                            <p class="justificado"><i class="fa fa-phone">&nbsp;&nbsp;(31) 3787-0155</i></p>
-                        </div>
-                        <div class="colcontact col-md-3 offset-md-0 col-9 offset-2">
-                            <p class="justificado"><i class="fa fa-whatsapp">&nbsp;&nbsp;(31) 99725-6288</i></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5 offset-1 col-10 offset-md-1">
-                            <form id="my_form" onsubmit="submitForm(); return false;"> 
-                                <input id="nome" type="text" class="feedback-input" placeholder="Name" required /> 
-                                <input id="email" type="email" class="feedback-input" placeholder="Email" required />
-                                <input id="telefone" type="tel" class="feedback-input" placeholder="Telefone" required />
-                                <textarea id="mensagem" class="feedback-input" placeholder="Sua mensagem" required></textarea>
-                                <br />
-                                <input type="submit" id="mybtn" value="Enviar" />
-                                <br />
-                                <span id="status" class="span_formsubmited"></span>
-                            </form>
-                        </div>
-                        <div class="col-md-5 offset-0 col-12"> 
-                            <iframe id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.2476042022624!2d-44.18135104952849!3d-19.946161953995347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c22d79df6ccb%3A0x8ad7b29eeacd63c2!2sParafusos+Automotivos!5e0!3m2!1spt-BR!2sus!4v1512573328260" width="95%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </header>
-            </section>             
-            <!-- Footer -->             
-            <footer id="footer"> 
-                <ul class="icons"> 
-                    <li>
-                        <a href="https://www.facebook.com/Parafusos-Automotivos-Originais-122428901725540/" class="icon circle fa-facebook"><span class="label">Facebook</span></a>
-                    </li>                     
-                </ul>                 
-                <ul class="copyright"> 
-                    <li>&copy; 2017 - Parafusos Automotivos</li>
-                    <li>Todos os direitos reservados. 
-</li>                     
-                </ul>
-                <ul class="copyright"> 
-                    <li>Desenvolvido por Leandro Pelegrini</li>
-                    <li>
-                        <a target="_blank" href="https://leandropelegrini.com.br">
-                            <img src="./images/iconeLP.png" alt="logoLP" height="20" width="20">
-                        </a>                         
-                    </li>                     
-                </ul>                 
-            </footer>             
-        </div>         
-        <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <!--  <script src="assets/js/jquery.min.js"></script>  -->         
-        <script src="assets/js/jquery.dropotron.min.js"></script>         
-        <script src="assets/js/jquery.scrolly.min.js"></script>         
-        <script src="assets/js/jquery.scrollgress.min.js"></script>         
-        <script src="assets/js/skel.min.js"></script>         
-        <script src="assets/js/util.js"></script>         
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]        -->         
-        <script src="assets/js/main.js"></script> 
-
-
-    </body>  
-        <!--Start of Tawk.to Script -->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5aa719c1d7591465c70880a3/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!-- End of Tawk.to Script-->
-    <meta name="description" content="A parafusosautomotivos.com.br é especializada em oferecer parafusos originais, com confiança e segurança para seus clientes de todo o Brasil.">
-    <meta name="keywords" content="automotivos,benz,betim,caminhão,especiais,mercedes,flangeado,ônibus,originais,original,Parafuso,Parafusos,fiat,volkswagen,gm,chevrolet,brasil,motor,roda,cardan,Parafusos automotivos,parafuso flangeado">
-    <meta name="author" content="Leandro Pelegrini">
+            </div>
+            <hr style="right: 0; margin-top: 20%;"/>
+            <div class="row">
+</div>
+        </div>
+        <div>
+            <div class="col-md-8">
+                <img src="assets/images/Layer%202.png" style="opacity: 0.08; z-index: -1; margin-bottom: -600px; margin-top: 70px;" class="img-fluid"/> 
+            </div>
+        </div>
+        <a name="contato"></a>
+        <div class="container" style="padding-top: 10%; padding-bottom: 10%;">
+            <div class="row">
+                <div class="col-md-6" style="padding-top: 10%;">
+                    <h3>Contato</h3> 
+                    <p><i class="fas fa-envelope"></i> Contato@parafusosautomotivos.com.br</p>
+                    <p><i class="fas fa-phone"></i> (31) 3787-0155</p>
+                    <p><i class="fab fa-whatsapp" style="font-size: 20px"></i> (31) 99725-6288</p> 
+                </div>
+                <div class="col-md-6 text-center" style="padding-top: 60px;">
+                    <iframe id="google" name="gooogle" title="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.2476042022624!2d-44.18135104952849!3d-19.946161953995347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6c22d79df6ccb%3A0x8ad7b29eeacd63c2!2sParafusos+Automotivos!5e0!3m2!1spt-BR!2sus!4v1512573328260" width="95%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>                     
+                </div>
+            </div>
+        </div>
+        <footer style="text-align: center;">
+            <p class="footer">© 2019 - Parafusos Automotivos - Todos os direitos reservados.</p>
+        </footer>
+        <!-- /.container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
