@@ -1,0 +1,20 @@
+{"dir" : "ltr",
+    "lang" : "en",
+    "name" : "Parafusos Automotivos | Peças Originais",
+    "scope" : "/",
+    "display" : "browser",
+    "start_url" : "https://www.parafusosautomotivos.com.br/",
+    "short_name" : "Parafusos Autom",
+    "theme_color" : "transparent",
+    "description" : "A parafusosautomotivos.com.br é especializada em oferecer parafusos originais, com confiança e segurança para seus clientes de todo o Brasil.",
+    "orientation" : "any",
+    "background_color" : "transparent",
+    "related_applications" : "",
+    "prefer_related_applications" : "false",
+    "generated" : "true",
+    "icons" : [
+        {
+            "src": "https://www.parafusosautomotivos.com.br/assets/images/favicon.png",
+            "sizes": "52x52"
+        }
+    ]}
