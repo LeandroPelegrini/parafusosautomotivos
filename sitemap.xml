@@ -1,37 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
 <url>
-  <loc>https://parafusosautomotivos.com.br/</loc>
-  <lastmod>2018-01-31T17:31:37+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.parafusosautomotivos.com.br/</loc>
+<lastmod>2019-08-18T14:16:52+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://parafusosautomotivos.com.br/lojas/fiat.html</loc>
-  <lastmod>2018-01-31T17:31:51+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>
+https://www.parafusosautomotivos.com.br/lojas/lista_produtos.html
+</loc>
+<lastmod>2019-08-18T14:16:52+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-<url>
-  <loc>https://parafusosautomotivos.com.br/lojas/mercedes.html</loc>
-  <lastmod>2018-01-31T17:31:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://parafusosautomotivos.com.br/lojas/volkswagen.html</loc>
-  <lastmod>2018-01-31T17:31:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://parafusosautomotivos.com.br/lojas/chevrolet.html</loc>
-  <lastmod>2018-01-31T17:31:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
 </urlset>
