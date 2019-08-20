@@ -48,7 +48,7 @@ body {
 }
 
 @media (min-width:768px) {
-    h3 {
+    h1 {
         font-family: 'Russo One', sans-serif;
         font-size: 3rem;
     }
